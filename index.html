@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css"
+</head>
+<body>
+    <video autoplay muted loop id="background-video">
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+  <form>
+    <div class="main">
+        <div>
+      <h1 id="title">Beauty Contest</h1>
+        </div>
+        <div>
+          <p id="description">Thank-You for filling this registration form!</p>
+        </div>
+        <label for="name">Name
+          <input required id="name" type="text">
+        </label>
+        <label for="email">Email
+          <input required id="email" type="email">
+        </label>
+        <label for="number">Age
+          <input id="number" type="number" min="12" max="30">
+        </label>
+        <label for="number">Height(cm)
+            <input id="number" type="number" min="12" max="30">
+          </label>
+          <label for="number">Weight(kgs)
+            <input id="number" type="number" min="12" max="30">
+          </label>
+        <label for="dropdown">How did you hear about us?
+          <select type="dropdown" name="" id="dropdown">
+          <option value="">Select any option </option>
+          <option value="1">Social Media</option>
+          <option value="2">Television</option>
+          <option value="3">Newspaper</option>
+          <option value="4">Friends or Family</option>
+          <option value="5">Streaming Service Ad</option>
+        </select>
+      </label>
+        <label for="will">Are you willing to do charity?
+          <input class="inline" type="radio" id="will" name="will">Yes
+          <input class="inline" type="radio" name="will" id="will">No
+        </label>
+        <label class="timing" for="">What are your talents?
+          <label for="checkbox">
+            <input class="inline" type="checkbox" id="checkbox" value="checkbox">Dance
+          </label>
+          <label for="checkbox1">
+           <input class="inline" type="checkbox" id="checkbox1" value="checkbox" name="checkbox">Singing
+          </label>
+          <label for="checkbox2">
+            <input class="inline" type="checkbox" name="checkbox" id="checkbox2" value="checkbox">Confidence
+          </label>
+          <label for="checkbox3">
+            <input class="inline" type="checkbox" name="checkbox" id="checkbox3" value="checkbox">Physical fitness
+          </label>
+          <label for="checkbox4">
+            <input  class="inline"type="checkbox" name="checkbox" id="checkbox4" value="checkbox">Beauty
+          </label>
+        </label>
+        <label for="textarea">
+            <textarea name="about" id="text" rows="5px" cols="20px" placeholder="What are your future Goals?"></textarea>
+          </label>
+        <label for="textarea">
+          <textarea name="about" id="textarea" rows="5px" cols="20px" placeholder="Tell us about yourself.."></textarea>
+        </label>
+        <label for="submit">
+          <input type="submit" id="submit">
+        </label>
+      </div>
+    </form>
+</body>
+</html>

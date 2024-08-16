@@ -1,0 +1,107 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+#background-video {
+    
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: 100vm;
+    height: 100vm;
+    z-index: -1; /* Sends the video to the background */
+    background-size: cover;
+    object-fit: contain;
+}
+
+#text{
+    height: 15px;
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+/*     background-image: url("150034912_420600625667843_4737866940141704131_n.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    color: #676767;
+    font-family: Tohoma;
+    font-size: 18px;
+}
+
+h1,p{
+    margin: 1em auto 0 20px;
+    text-align: left;
+}
+label{
+    display: block;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+form{
+    width:60vm;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0;
+    padding-bottom: 2em;
+}
+input, textarea, select {
+    margin: 10px 0 ;
+    width: 70%;
+}
+input, textarea{
+    background: transparent;
+    color: #676767;
+}
+
+.inline{
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+    
+}
+
+input[type="submit"]{
+    display: block;
+    width: 80%;
+    margin: 1em auto 0 0;
+    height: 2em;
+    font-size: 1.1em;
+    background: transparent;
+    border-color: 	white;
+    min-width: 300px;
+}
+ input[type="file"]{
+    padding: 1px 2px;
+ }
+ .inline{
+    display: inline;
+ }
+
+ #dropdown{
+    background: transparent;
+    color: #676767;
+ }
+ input[type="checkbox"] {
+    appearance: none; /* Removes the default checkbox styling */
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border: 1px solid #000000;
+    border-radius: 0.1px; /* Adjust the radius for rounder edges */
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background-color: white;
+}
