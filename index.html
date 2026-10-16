@@ -1,4 +1,4 @@
-
+<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -79,4 +79,151 @@
       </div>
     </form>
 </body>
+</html>*/-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Beauty Contest</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background video -->
+    <video
+        autoplay
+        muted
+        loop
+        playsinline
+        id="background-video"
+        aria-hidden="true"
+    >
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Registration form -->
+    <form action="#" method="post">
+
+        <div class="main">
+
+            <h1 id="title">Beauty Contest</h1>
+
+            <p id="description">
+                Thank-You for filling this registration form!
+            </p>
+
+            <label for="name">
+                Name
+                <input required id="name" name="name" type="text">
+            </label>
+
+            <label for="email">
+                Email
+                <input required id="email" name="email" type="email">
+            </label>
+
+            <label for="age">
+                Age
+                <input id="age" name="age" type="number" min="12" max="30">
+            </label>
+
+            <label for="height">
+                Height (cm)
+                <input id="height" name="height" type="number"
+                       min="0" max="300">
+            </label>
+
+            <label for="weight">
+                Weight (kgs)
+                <input id="weight" name="weight" type="number"
+                       min="40" max="70">
+            </label>
+
+            <label for="dropdown">
+                How did you hear about us?
+                <select name="source" id="dropdown">
+                    <option value="">Select any option</option>
+                    <option value="social-media">Social Media</option>
+                    <option value="television">Television</option>
+                    <option value="newspaper">Newspaper</option>
+                    <option value="friends-family">Friends or Family</option>
+                    <option value="streaming-ad">Streaming Service Ad</option>
+                </select>
+            </label>
+
+            <label>
+                Are you willing to do charity?
+                <div>
+                    <input class="inline" type="radio"
+                           id="charity-yes" name="charity" value="yes">
+                    <label for="charity-yes" style="display:inline">
+                        Yes
+                    </label>
+
+                    <input class="inline" type="radio"
+                           id="charity-no" name="charity" value="no">
+                    <label for="charity-no" style="display:inline">
+                        No
+                    </label>
+                </div>
+            </label>
+
+            <label>What are your talents?</label>
+
+            <label>
+                <input class="inline" type="checkbox"
+                       name="talents" value="dance">
+                Dance
+            </label>
+
+            <label>
+                <input class="inline" type="checkbox"
+                       name="talents" value="singing">
+                Singing
+            </label>
+
+            <label>
+                <input class="inline" type="checkbox"
+                       name="talents" value="confidence">
+                Confidence
+            </label>
+
+            <label>
+                <input class="inline" type="checkbox"
+                       name="talents" value="fitness">
+                Physical fitness
+            </label>
+
+            <label>
+                <input class="inline" type="checkbox"
+                       name="talents" value="beauty">
+                Beauty
+            </label>
+
+            <label for="goals">
+                <textarea name="goals" id="goals" rows="5"
+                          placeholder="What are your future goals?"></textarea>
+            </label>
+
+            <label for="about">
+                <textarea name="about" id="about" rows="5"
+                          placeholder="Tell us about yourself..."></textarea>
+            </label>
+
+            <label for="submit">
+                <input type="submit" id="submit" value="Submit">
+            </label>
+
+        </div>
+
+    </form>
+
+</body>
 </html>
+
